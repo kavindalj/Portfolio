@@ -1,0 +1,40 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.navContainor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0%;
+  padding: 0%;
+}
+img {
+  margin: 0%;
+  padding: 0%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+}
+
+li {
+  margin-left: 20px;
+}
+
+.homeContainor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeRight {
+  background-color: blue;
+}
