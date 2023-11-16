@@ -1,23 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
 * {
   padding: 0%;
   margin: 0%;
 }
+body {
+  background-color: black;
+  color: white;
+}
 .navContainor {
+  width: auto;
   display: flex;
+  padding-top: 15px;
   justify-content: space-between;
   align-items: center;
 }
 .logo {
-  margin: 0%;
-  padding: 0%;
+  width: auto;
 }
-img {
-  margin: 0%;
-  padding: 0%;
+
+.logo a img {
+  position: absolute;
+  width: 30%;
+  padding-top: 8%;
 }
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  color: #04147a;
 }
 .menu {
   list-style-type: none;
@@ -30,11 +45,93 @@ li {
   margin-left: 20px;
 }
 
+#darkMode:hover path {
+  fill: #04147a;
+}
+
 .homeContainor {
+  width: auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 2%;
+}
+.homeLeft {
+  width: auto;
+  padding-left: 3%;
+  padding-top: 20%;
+  justify-content: center;
+}
+
+.homeContent {
+  width: auto;
+  padding-left: 15%;
+}
+
+#hp1 {
+  font-size: 25px;
+  padding-bottom: 35px;
+  padding-top: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+#hp2 {
+  font-size: 15px;
+  padding-bottom: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+#hp3 {
+  font-size: 50px;
+  padding-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+#hp4 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  background-color: #020948;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 110px;
+  height: 35px;
+}
+
+button:hover {
+  background-color: #04147a;
 }
 
 .homeRight {
-  background-color: blue;
+  width: auto;
+  padding-right: 23%;
+  padding-top: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainImg {
+  width: auto;
+  position: relative;
+  padding-right: 5%;
+  align-items: center;
+}
+#secCircle {
+  width: 140%;
+  position: absolute;
+  z-index: -2;
+}
+#firCircle {
+  width: 140%;
+  position: absolute;
+  z-index: -1;
+  padding-left: 20%;
+  padding-top: 10%;
+}
+#man {
+  width: 180%;
+  position: relative;
+  z-index: 0;
+  padding-top: 25%;
 }
