@@ -145,25 +145,28 @@ button:hover {
   align-items: center;
   padding-top: 12%;
   padding-bottom: 12%;
+  padding-left: 3%;
 }
 
 .abutLeft {
-  width: 50%;
+  width: auto;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  padding-left: 50%;
 }
 
 .aboutImg {
-  position: relative;
+  position: sticky;
   padding-top: 15%;
-  padding-left: 95%;
+  padding-left: 93%;
   align-items: center;
   justify-content: center;
   width: auto;
 }
 
 #secRec {
-  width: 203%;
+  width: 285%;
   position: absolute;
   z-index: 0;
   transition: 1s;
@@ -171,7 +174,7 @@ button:hover {
 }
 
 #firRec {
-  width: 203%;
+  width: 285%;
   position: absolute;
   z-index: 1;
   transition: 1s;
@@ -201,8 +204,34 @@ button:hover {
 }
 
 .aboutRight {
-  width: 50%;
+  width: auto;
   justify-content: center;
   align-items: center;
-  padding-right: 2%;
+  padding-right: 5%;
+  padding-left: 30%;
+}
+
+.contactMe {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactLeft {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.contactRight {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5%;
+}
+
+#contactImg {
+  width: 200%;
 }
