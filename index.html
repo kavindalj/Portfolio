@@ -13,10 +13,10 @@
       </div>
       <div class="menuBar">
         <ul class="menu">
-          <li><a href="">Home</a></li>
+          <li><a href="#homeContainor">Home</a></li>
           <li><a href="#aboutMe">About Me</a></li>
           <li><a href="">My Projects</a></li>
-          <li><a href="">Contact Me</a></li>
+          <li><a href="#contactMe">Contact Me</a></li>
           <li>
             <a href="" id="darkMode"
               ><svg
@@ -48,8 +48,10 @@
             Web Developer | Business Manager | System Developer | Content
             Creator
           </p>
-          <button>Contact Me</button>
-          <button>About Me</button>
+          <button onclick="window.location.href='#contactMe'">
+            Contact Me
+          </button>
+          <button onclick="window.location.href='#aboutMe'">About Me</button>
         </div>
       </div>
       <div class="homeRight">
@@ -76,6 +78,7 @@
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to
         </p>
+        <button>My Projects</button>
       </div>
     </div>
     <div class="contactMe" id="contactMe">
@@ -102,6 +105,7 @@
           <label for="name">Message</label> <br />
           <textarea name="message" id="" cols="30" rows="15%"></textarea><br />
           <input type="submit" value="Send" />
+          <img src="img/icons/send.svg" alt="" id="sendImg" />
         </form>
       </div>
     </div>

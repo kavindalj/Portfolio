@@ -8,6 +8,7 @@
 body {
   background-color: black;
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
 .navContainor {
   width: auto;
@@ -90,7 +91,8 @@ li {
   font-family: "Open Sans", sans-serif;
 }
 
-button {
+button,
+input[type="submit"] {
   background-color: #020948;
   border: none;
   border-radius: 10px;
@@ -101,7 +103,8 @@ button {
   height: 35px;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   background-color: #04147a;
 }
 
@@ -143,8 +146,8 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding-top: 14%;
+  padding-bottom: 10%;
   padding-left: 3%;
 }
 
@@ -216,43 +219,56 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .contactLeft {
-  width: auto;
+  width: 20%;
   justify-content: center;
+  position: sticky;
   align-items: center;
   padding-top: 2%;
-  padding-right: 35%;
+  padding-right: 32%;
   padding-left: 1%;
 }
 .textIcon {
   align-items: center;
   justify-content: center;
   padding-left: 100%;
-  width: 50%;
+  width: 100%;
 }
 
 .textIcon h2 {
-  padding: 0% 10% 0% 10%;
+  padding-left: 22%;
 }
 
 .socialMeadia {
-  width: 150%;
+  width: 100%;
   align-items: center;
   padding-top: 5%;
 }
 
+.socialMeadia a img {
+  width: 20%;
+}
+
 #contactImg {
-  width: 250%;
-  padding-left: 20%;
+  width: 280%;
 }
 
 .contactRight {
-  width: 40%;
+  width: 50%;
   justify-content: center;
   align-items: center;
-  padding-right: 10%;
+  padding-right: 3%;
+  padding-left: 2%;
+  position: sticky;
+}
+
+form {
+  padding-left: 2%;
+  z-index: 0;
 }
 
 input[type="text"],
@@ -268,4 +284,16 @@ textarea {
   margin-top: 1%;
   margin-bottom: 1%;
   resize: vertical;
+}
+
+input[type="submit"] {
+  z-index: 0;
+  position: absolute;
+}
+
+#sendImg {
+  position: absolute;
+  z-index: 1;
+  padding-top: 23px;
+  padding-left: 80px;
 }
