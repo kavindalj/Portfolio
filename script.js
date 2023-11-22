@@ -1,10 +1,16 @@
 window.addEventListener("scroll", function (e) {
   const target = document.querySelector("#sign");
-  //   const size = target.getBoundingClientRect();
   var scrolled = window.pageYOffset;
-  var rate = 100 - scrolled * 0.1;
+  var rate;
 
-  console.log(rate);
+  console.log(scrolled, rate);
 
-  target.style.transform = "scale(" + rate + "%)";
+  if (scrolled > 456.01) {
+    target.style.transform = "scale(11%)";
+  }
+
+  if (scrolled <= 456.0) {
+    rate = 100 - scrolled * 0.1974;
+    target.style.transform = "scale(" + rate + "%)";
+  }
 });
